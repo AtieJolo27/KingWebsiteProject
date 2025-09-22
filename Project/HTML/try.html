@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="swiper-12.0.1/package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+
+    <div class="swiper MenuSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                     <div class="img-container">
+                        <img src="KingBibimbowl.jpg" alt="Kimbap and KStyle Chicken Combo" class="card-img-top">
+                    </div> 
+                    <div class="card-body">
+                        <h6 class="card-title">KStyle Chicken+Kimbap Combo</h6>
+                        <p class="card-text ">
+                            Enjoy the tastiness of your authentic pork
+                            samgyupsal at your home for an affordable price
+                        </p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="KStyleChicken+Kimbap.jpg" alt="Kimbap and KStyle Chicken Combo" class="card-img-top">
+                    </div>                    <div class="card-body">
+                        <h6 class="card-title">KStyle Chicken+Kimbap Combo</h6>
+                        <p class="card-text ">
+                            Enjoy the tastiness of your authentic pork
+                            samgyupsal at your home for an affordable price
+                        </p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="KingBibimbowl.jpg" alt="Kimbap and KStyle Chicken Combo" class="card-img-top">
+                    </div>                    <div class="card-body">
+                        <h6 class="card-title">KStyle Chicken+Kimbap Combo</h6>
+                        <p class="card-text ">
+                            Enjoy the tastiness of your authentic pork
+                            samgyupsal at your home for an affordable price
+                        </p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="KingBibimbowl.jpg" alt="Kimbap and KStyle Chicken Combo" class="card-img-top">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h6 class="card-title">KStyle Chicken+Kimbap Combo</h6>
+                        <p class="card-text ">
+                            Enjoy the tastiness of your authentic pork
+                            samgyupsal at your home for an affordable price
+                        </p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <script src="swiper-12.0.1/package/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".MenuSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            breakpoints: {
+                320: {slidesPerView: 1, spaceBetween:2},
+                768: {slidesPerView: 2, spaceBetween:2},
+                1024: {slidesPerView: 3, spaceBetween: 20},
+            }
+        });
+    </script>
+</body>
+</html>

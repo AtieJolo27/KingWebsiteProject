@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <div class="modal " tabindex="-1" id="SignupPopup">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignupModal">King Samgyupsal</h5>
+        </div>
+        <div class="modal-body" >
+          <div class="row">
+            <div class="col-md-7 mb-4">
+              <h4 class="mb-3">Sign Up</h4>
+              <p>Welcome to King Samgyupsal! Login or signup an account for a delightful, king-like ordering experience</p>
+              </div>
+              <div class="col-md-5 mb-5">
+                <form action="MenuItemsGetter.php" method="post">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="FNameInput" name="FName" placeholder="Juan" required>
+                    <label for="FNameInput">First Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="LNameInput" name="LName"placeholder="Delacruz"required>
+                    <label for="LNameInput">Last Name</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="NumberInput" name="TelephoneNumber" placeholder="09000000000" pattern="[0-9]{11}" maxlength="11" required>
+                    <label for="NumberInput">Telephone Number</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="EmailInput" name="EmailAddress"placeholder="juandelacruz@email.com" required>
+                    <label for="EmailInput">Email Address</label>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                  </div>
+                </form>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("showModal")==="1"){
+            const myModal = new bootstrap.Modal(document.getElementById("SignupPopup"));
+            myModal.show();
+        }
+    </script>
+</body>
+</html>
